@@ -1,0 +1,12 @@
+include template/_mixins.jade
+
+doctype html
+html(lang='en')
+  head
+    title= title
+    link(href='styles/main.css', rel='stylesheet')
+  body
+    main
+      include template/_slides.jade
+    script(src='scripts/vendor.js', type='text/javascript')
+    script(src='scripts/main.js', type='text/javascript')

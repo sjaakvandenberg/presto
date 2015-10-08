@@ -1,0 +1,56 @@
+- var author = 'Sjaak van den Berg'
+- var twitter = '@svdb'
+- var website = 'http://svdb.co/'
+- var avatar = 'http://placehold.it/256/00f/fafafa?text=SB'
+- var title = 'Gulp Start'
+
+section
+  h1 H1 Header
+  p Some text goes here, and some #[code code].
+  +code('ruby')
+    | class Person
+    |   def shout(words)
+    |     print words.upcase + '!'
+    |   end
+    | end
+
+    | p = Person.new()
+    | p.shout('hello world') # => HELLO WORLD! @
+  p line
+section.center
+  h1 Presentation Title
+section.center
+  h1 Gulp Start
+  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam explicabo accusamus tenetur autem necessitatibus voluptatibus dolorem, iure deserunt molestias minima.
+section.center
+  h1 Supports
+  ul
+    li Jade templates
+    li Stylus stylesheets
+    li Browsersync
+    li Asset minification
+section.center
+  h1 H1 Header
+  h2 H2 Header
+  h3 H3 Header
+  h4 H4 Header
+  h5 H5 Header
+  h6 H6 Header
+section
+  h1 H1 Header
+  h2 H2 Header
+  h3 H3 Header
+  h4 H4 Header
+  h5 H5 Header
+  h6 H6 Header
+section
+  h1 Yeah
+  blockquote
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+section.center.background(style="background-image: url('https://unsplash.com/photos/xFjAftU8lMY/download';")
+  h1 H1 Header
+  p Subtitle goes here #{author}
+section.author.center
+  h2 #{author}
+  img(src='#{avatar}')
+  p twitter #[a(href='https://twitter.com/#{twitter}') #{twitter}]
